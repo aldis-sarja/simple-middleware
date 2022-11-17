@@ -18,7 +18,7 @@ class CheckVersion
     {
     $version = $request->get('version');
     if ($version != 2){
-        return response()->json(['error' => 'такой версии не существует']);
+        return response()->json(['error' => 'такой версии не существует'], 404);
     }
         return $next($request);
     }
