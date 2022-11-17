@@ -9,6 +9,15 @@ i.e. `version=2` in this example.
 git clone https://github.com/aldis-sarja/simple-middleware.git
 cd simple-middleware
 composer install
+```
+
+Make a `.env` file copy
+```bash
+cp .env.example .env
+```
+
+and generate API key
+```bash
 php artisan key:generate
 ```
 
